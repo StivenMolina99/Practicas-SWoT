@@ -1,1 +1,1 @@
-# Practicas-SWoT
+# Practicas-SWot
