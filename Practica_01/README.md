@@ -23,3 +23,10 @@
 ---
 
 ## Reconocimiento de herramientas de red
+
+ - [Comando ss](#comando-ss)
+
+---
+
+## Comando ss
+
