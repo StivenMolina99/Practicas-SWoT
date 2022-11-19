@@ -1,1 +1,13 @@
-Esto es la primera practica
+# Práctica 1: Configuración de entorno y red
+
+## Secciones
+-[Instalación de Docker](#instalació-de-docker)
+
+
+---
+
+## Instalación  de Docker
+
+1. Para este caso se hace la instalación para Ubuntu 22.04, se descargan los .deb usando el siguiente link: https://download.docker.com/linux/ubuntu/dists/, luego se debe ir a "pool/stable/" y escoger la rquitectura "amd64", despues de ello ya aparecen los .deb y se descargan.
+   
+2. Se instalan los .deb como se muestra en la figura 
