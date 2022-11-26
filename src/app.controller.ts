@@ -15,6 +15,6 @@ export class AppController {
   @Post(':nombre')
   modificar(@Param('nombre') nombre: string): string {
     this.persona = nombre;
-    return `Mensaje modificad: ${this.persona}`
+    return `Mensaje modificado: ${this.persona}`
   }
 }
