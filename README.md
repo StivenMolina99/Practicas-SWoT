@@ -22,51 +22,52 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Practicas-SWoT
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+ Edwin Stiven Molina Arias
 
-## Installation
+ Asignatura: Web Semantica de Internet de las cosas
 
-```bash
-$ npm install
-```
+## Secciones
 
-## Running the app
+  - [Practica 2](#practica-2)
 
-```bash
-# development
-$ npm run start
+---
+  
+## Practica 2
+Fecha de realización: 27 de noviembre de 2022
 
-# watch mode
-$ npm run start:dev
+1. Se importan la anotaciones "@Post, @Put(), @Delete(), @Patch()" como se muestra en la siguiente figura.
 
-# production mode
-$ npm run start:prod
-```
+![Importar_Anotaciones](Image/1.png)
 
-## Test
+2. Se escoje un tema para modelar como base de datos, el tema escogido es "productos", y se crea como se miestrae en la siguiente figura.
+   
+![Crear_Producto](Image/2.png)
 
-```bash
-# unit tests
-$ npm run test
+3. Se agrega un producto como se muestra en la siguiente figura.
+   
+![Agregar_Producto](/Image/3.png)
 
-# e2e tests
-$ npm run test:e2e
+4. Se crea la anotacion @Get, la cual se usa para retornar la información de los productos que hay en la base de datos, como se muestra en la siguiente figura.
+   
+![Retornar_productos](Image/4.png)
 
-# test coverage
-$ npm run test:cov
-```
+5. Se crea la anotacion @Post, la cual se usa para crear un Producto, el cual se guarda la información en "datos" que luego se envia a productos para que se guarde en la base de datos, y finalmente se retorna la información se ingresó sobre el nuevo producto, como se muestra en la siguiente figura.
+   
+![Crear_Producto](Image/5.png)
 
-## Support
+6. Se crea la anotacion @Put, la cual se usa para Actualizar un Producto, el cual se guarda la información en "datos" e ingresando la posición donde se encuentra el producoto que se quiere actualizar y se guarda en "id", que luego se actualiza en productos , y finalmente se retorna la información se ingresó para actaulizar el producto, y en caso tal de que se produzca un error se retorna un mensaje de que no se pudo hacer la modificación, como se muestra en la siguiente figura.
+   
+![Actualizar_Producto](Image/6.png)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+7. Se crea la anotacion @Delet, la cual se usa para Eliminar un Producto, el cual se guarda en "id" la posición del producto que se quiere eliminar, y finalmente se retorna "true" si se eliminó correctamente, y en caso tal de que no se haya eliminado se retorna "false", como se muestra en la siguiente figura.
+   
+![Eliminar_Producto](Image/7.png)
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+8. Se crea la anotacion @Patch, la cual se usa para Actualizar la duracion del producto, el cual se guarda la información en "duracion_dias" e ingresando la posición donde se encuentra el producoto que se quiere actualizar y se guarda en "id", que luego se actualiza en productos , y finalmente se retorna la información del producto que se actaulizó, y en caso tal de que se produzca un error se retorna un mensaje de que no se pudo hacer la modificación, como se muestra en la siguiente figura.
+   
+![Cambiar_Duración](Image/8.png)
 
 ## License
 
