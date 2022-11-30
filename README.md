@@ -69,35 +69,79 @@ Fecha de realización: 27 de noviembre de 2022
 
 ## Practica 3
 
-1. Se crea una rama hexagonal a partir de master y se modifican los archivos en diferentes carpetas, para que se aplique la arquitectura exagonal como se muestra en la siguiente figura.
-   
- ![Modificar_Carpetas](Image/Practica_03/Arquitectura_Hexagonal/1.png) 
-
-2. En `producto.model.ts` se modelan los datos como se muestra en la siguiente figura.
+* Arquitectura hexagonal
+  
+  1. Se crea una rama hexagonal a partir de master y se modifican los archivos en diferentes carpetas, para que se aplique la arquitectura exagonal como se muestra en la siguiente figura.
+  
+  ![Modificar_Carpetas](Image/Practica_03/Arquitectura_Hexagonal/1.png) 
+  
+  2. En `producto.model.ts` se modelan los datos como se muestra en la siguiente figura.
    
    ![Modelar_datos](Image/Practica_03/Arquitectura_Hexagonal/2.png)
-
-Luego se extiende el modelo a una mercancia como se muestra en la siguiente figura.
+   
+   Luego se extiende el modelo a una mercancia como se muestra en la siguiente figura.
   
   ![Esntender_Modelo](Image/Practica_03/Arquitectura_Hexagonal/3.png)
-
-3. Se implementa el archivo `mercancia.service.ts` como se muestra en las siguientes figuras.
+  
+  3. Se implementa el archivo `mercancia.service.ts` como se muestra en las siguientes figuras.
    
    ![Mercancia_Service](Image/Practica_03/Arquitectura_Hexagonal/4.png)
    ![Mercancia_Service](Image/Practica_03/Arquitectura_Hexagonal/5.png)
-
-4. Se modifica el controlador que ahora se llama `mercancia.controller.ts`, como se muestra en las siguientes figuras.
+   
+  4. Se modifica el controlador que ahora se llama `mercancia.controller.ts`, como se muestra en las siguientes figuras.
    
    ![Mercancia_Controller](Image/Practica_03/Arquitectura_Hexagonal/6.png)
    ![Mercancia_Controller](Image/Practica_03/Arquitectura_Hexagonal/7.png)
-
-5. Se modifica el archivo `app.controller.spec.ts`, que ahora se llama `mercancia.controller.spec.ts`, como se muestra en la siguiente figura.
+   
+  5. Se modifica el archivo `app.controller.spec.ts`, que ahora se llama `mercancia.controller.spec.ts`, como se muestra en la siguiente figura.
    
    ![Mercancia_Controller_Spec](Image/Practica_03/Arquitectura_Hexagonal/8.png)
-
-6. Finalmente se modifica el archivo `app.module.ts`, como se muestra en la siguiente figura.
+   
+  6. Finalmente se modifica el archivo `app.module.ts`, como se muestra en la siguiente figura.
    
    ![App_Module](Image/Practica_03/Arquitectura_Hexagonal/9.png)
+
+  - (Opcional) Aplicando el principio D
+    
+    1. se modifica `app.module.ts`, como se muestra en la siguiente figura.
+    
+    ![App_Module_Mod](Image/Practica_03/Arquitec_Hexa_Princ_D/1.png)
+
+    2. Se modifica el `product.controller.spec.ts`, como se muestra en la siguiente figura.
+   
+    ![Product_Controller_Spec](Image/Practica_03/Arquitec_Hexa_Princ_D/2.png)
+
+    3. Se elimina el archivo `mercancia.controller.spec.ts`.
+       
+    4. Se modifica el archivo `mercancia.controller.ts`, como se muestra en las siguientes figuras.
+   
+    ![Mercancia_Controller](Image/Practica_03/Arquitec_Hexa_Princ_D/3.png)
+
+    ![Mercancia_Controller](Image/Practica_03/Arquitec_Hexa_Princ_D/4.png)
+
+    5. Se Agrega un archivo llamado `mercanciaImpl.controller.ts`, como se muestra en las siguientes figuras.
+   
+    ![MercanciaImpl_Controller](Image/Practica_03/Arquitec_Hexa_Princ_D/5.png)
+
+    ![MercanciaImpl_Controller](Image/Practica_03/Arquitec_Hexa_Princ_D/6.png)
+
+    ![MercanciaImpl_Controller](Image/Practica_03/Arquitec_Hexa_Princ_D/7.png)
+
+    6. Se modifica el archivo `mercancia.model.ts`, como se muestra en la siguiente figura.
+   
+    ![Mercancia_Model](Image/Practica_03/Arquitec_Hexa_Princ_D/8.png)
+
+    7. Se modifica el archivo `mercancia.service.ts`, como se muestra en las siguientes figuras.
+   
+    ![Mercancia_Service](Image/Practica_03/Arquitec_Hexa_Princ_D/9.png)
+
+    ![Mercancia_Service](Image/Practica_03/Arquitec_Hexa_Princ_D/10.png)
+
+    8. Se Agrega un archivo llamado `mercanciaImpl.service.ts`, como se muestra en las siguientes figuras.
+   
+    ![MercanciaImpl_Service](Image/Practica_03/Arquitec_Hexa_Princ_D/11.png)
+
+    ![MercanciaImpl_Service](Image/Practica_03/Arquitec_Hexa_Princ_D/12.png)
 
 ## License
 

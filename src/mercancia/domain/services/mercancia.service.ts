@@ -1,61 +1,38 @@
-import { Injectable } from '@nestjs/common';
-//Importamos el modelo de la mercancia
-import { Mercancia } from '../models/mercancia.model';
+import { Mercancia } from "../models/mercancia.model";
 
-@Injectable()
-export class MercanciaService {
+export interface MercanciaService {
 
-  // Como no hay base de datos aun empleamos una variable en memoria:
-  private mercancia: Mercancia[]=[{
-     nombre: 'Kumis',
-     materia_prima: 'Leche',
-     duracion_dias: '45',
-     grupo: 'Estandar'
-  }]
-
-  /**
-    * Método para obtener todos los productos
+   /**
+    * Retorna la lista de productos registrados
     */
-   public listar() : Mercancia[] {
-    return this.mercancia
- }
+   list(): Mercancia[];
 
- /**
-    * Método para crear una mercancia
+   /**
+    * Crea un nuevo producto
+    * @param mercancia datos del nuevo producto
+    * @return Nuevo producto
     */
-  public crear(producto: Mercancia): Mercancia {
-    this.mercancia.push(producto);
-    return producto;
- }
+   create(mercancia: Mercancia): Mercanica;
 
- /**
-    * Método para modificar un producto
+   /**
+    * Actualiza datos de producto
+    * @param id Identificador único del producto
+    * @param mercanicia datos del producto
+    * @return Producto modificado
     */
-  public modificar(id: number, producto: Mercancia): Mercancia {
-    this.mercancia[id] = producto
-    return this.mercancia[id];
- }
+   update(id: number, mercancia: Mercancia): Mercancia
 
- /**
-    * Método para eliminar un producto
-    * Debido a que usamos un filtro, para validar si se elimina el producto, 
-    * primero se determina cuantos elementos hay en el arreglo y luego se hace una comparación.
+   /**
+    * Eliminar un producto
+    * @param id Identificador único del producto
+    * @return True si eliminó al producto
     */
-  public eliminar(id: number): boolean {
-    const totalProductosAntes = this.mercancia.length;
-    this.mercancia = this.mercancia.filter((val, index) => index != id);
-    if(totalProductosAntes == this.mercancia.length){
-       return false;
-    }
-    else{
-       return true;
-    }
- }
- /**
-    * Método para modificar la duracion de un producto
+   delete(id: number): boolean
+
+   /**
+    * Cambia la duracion de un producto
+    * @param id Identificador único del producto
+    * @param duracion_dias nuevo valor de duracion
     */
-  public cambiarDuracion(id: number, duracion: number): Mercancia {
-    this.mercancia[id].duracion_dias = duracion;
-    return this.mercancia[id];
- }
+   updateAge(id: number, duracion_dias: number): Mercancia
 }
