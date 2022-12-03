@@ -29,7 +29,7 @@ export class MercanciaServiceImpl implements MercanciaService {
   public delete(id: number): boolean {
     const totalProductosAntes = this.mercancia.length;
     this.mercancia = this.mercancia.filter((val, index) => index != id);
-    if(totalProductosAntes == this.mercacia.length){
+    if(totalProductosAntes == this.mercancia.length){
       return false;
     }
     else{

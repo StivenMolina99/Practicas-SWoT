@@ -143,6 +143,48 @@ Fecha de realización: 27 de noviembre de 2022
 
     ![MercanciaImpl_Service](Image/Practica_03/Arquitec_Hexa_Princ_D/12.png)
 
+* Implementado Seguridad
+  
+  1. Se modifica el archivo `app.module.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/1.png)
+
+  2. Se agrega un archivo llamado `auth.module.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/2.png)
+
+  3. Se agrega un archivo llamado `auth.service.spec.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/3.png)
+
+  4. Se agrega un archivo llamado `auth.service.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/4.png)
+
+  5. Se agrega un archivo llamado `local.strategy.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/5.png)
+
+  6. Se elimina un archivo llamado `producto.controller.spec.ts`.
+  7. Se modifica el archivo `mercanciaImpl.controller.ts`, como se muestra en las siguientes figuras.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/6.png)
+
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/7.png)
+
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/8.png)
+
+  8. Se agrega un archivo llamado `users.module.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/9.png)
+
+  9. Se agrega un archivo llamado `users.service.spec.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/10.png)
+
+  10. Se agrega un archivo llamado `users.service.ts`, como se muestra en la siguiente figura.
+   
+   ![App_Module](Image/Practica_03/Implementado%20seguridad/11.png)
 ## License
 
 Nest is [MIT licensed](LICENSE).

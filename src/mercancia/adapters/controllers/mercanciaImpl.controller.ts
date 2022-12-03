@@ -1,8 +1,9 @@
-import { Body, Controller, Delete, Get, Inject, Param, Patch, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Inject, Param, Patch, Post, Put, UseGuards } from '@nestjs/common';
 import { MercanciaService } from '../../domain/services/mercancia.service';
 
 import {Mercancia} from '../../domain/models/mercancia.model';
 import { MercanciaController } from './mercancia.controller';
+import { AuthGuard } from '@nestjs/passport';
 
 const errReturn = (e: Error, message: string) => {
   return {
@@ -14,6 +15,10 @@ const errReturn = (e: Error, message: string) => {
 @Controller()
 export class MercanciaControllerImpl implements MercanciaController {
   constructor(@Inject('MercanciaService') private readonly productoService: MercanciaService) { }
+  
+  listMercancia() {
+    throw new Error('Method not implemented.');
+  }
 
   @Get()
   listMercanica() {
@@ -25,6 +30,8 @@ export class MercanciaControllerImpl implements MercanciaController {
     }
   }
 
+  @UseGuards(AuthGuard('local'))
+  
   @Post()
   create(@Body() datos: Mercancia) {
     try{

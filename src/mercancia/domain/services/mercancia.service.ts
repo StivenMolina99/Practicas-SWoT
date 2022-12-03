@@ -9,15 +9,15 @@ export interface MercanciaService {
 
    /**
     * Crea un nuevo producto
-    * @param mercancia datos del nuevo producto
+    * @param  mercancia datos del nuevo producto
     * @return Nuevo producto
     */
-   create(mercancia: Mercancia): Mercanica;
+   create(mercancia: Mercancia): Mercancia;
 
    /**
     * Actualiza datos de producto
-    * @param id Identificador único del producto
-    * @param mercanicia datos del producto
+    * @param  id Identificador único del producto
+    * @param  mercanicia datos del producto
     * @return Producto modificado
     */
    update(id: number, mercancia: Mercancia): Mercancia
